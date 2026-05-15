@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
 <header class="site-header">
   <div class="nav-wrap">
     <a class="logo-link" href="index.html"><img src="assets/images/logo.png" alt="Neon Wheels"></a>
-    <button class="nav-toggle" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <button class="nav-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
     <ul class="nav-menu" id="nav">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
@@ -27,24 +28,75 @@
       <li><a href="business-plan.html">5-Year Plan</a></li>
       <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
-    <a href="donate.html" class="btn btn-pink nav-cta">♥ Donate</a>
+    <a href="donate.html" class="btn btn-pink btn-sm"><i class="fa-solid fa-heart"></i> Donate</a>
   </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
   <div class="container">
     <div class="hero-grid">
-      <div>
-        <h1>Contact Us</h1>
-        <p class="script t-pink" style="font-size:1.6rem;">Connect With the Visionary Leaders</p>
-        <p>Neon Wheels Roller Skating Rink &amp; Fun Center is being built with a mission to create a safe, inspiring, and transformational space for youth, families, and the Lake County community.</p>
-        <div class="card mt-2" style="display:flex; gap:14px; align-items:center;">
-          <div class="icon-circle" style="margin:0;">👥</div>
-          <p style="margin:0;">We would love to connect with donors, sponsors, community partners, churches, schools, foundations, and supporters who believe in our vision.</p>
+      <div class="reveal">
+        <span class="badge badge-pink mb-2"><i class="fa-solid fa-envelope-open-text"></i> Get In Touch</span>
+        <h1>Contact <span class="neon-text-pink">Us</span></h1>
+        <p class="script t-cyan" style="font-size:1.6rem;">Connect with the Visionary Leaders</p>
+        <p class="lead">Neon Wheels is being built with a mission to create a safe, inspiring, and transformational space for youth, families, and the Lake County community.</p>
+        <div class="card" style="display:flex; gap:18px; align-items:center;">
+          <span class="icon-badge" style="margin:0; min-width:64px;"><i class="fa-solid fa-people-group"></i></span>
+          <p style="margin:0;">We would love to connect with <strong class="t-cyan">donors, sponsors, community partners, churches, schools, foundations,</strong> and supporters who believe in our vision.</p>
+        </div>
+        <div class="grid grid-3 mt-3">
+          <a href="tel:+12246145495" class="info-card cyan">
+            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="info-label">Call Us</div>
+              <div class="info-value">+1 (224) 614-5495</div>
+            </div>
+          </a>
+          <a href="mailto:info@neonwheelsrollerskating.org" class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="info-label">Mail Us</div>
+              <div class="info-value" style="font-size:0.9rem;">info@neonwheelsrollerskating.org</div>
+            </div>
+          </a>
+          <a href="https://maps.google.com/?q=600+N+Berwick+Blvd+Waukegan+IL+60085" target="_blank" rel="noopener" class="info-card yellow">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="info-label">Visit Us</div>
+              <div class="info-value" style="font-size:0.9rem;">600 N Berwick Blvd<br>Waukegan, IL 60085</div>
+            </div>
+          </a>
         </div>
       </div>
-      <div>
-        <img src="assets/images/building-rendering.png" alt="Neon Wheels building">
+      <div class="reveal">
+        <div class="neon-frame">
+          <img src="assets/images/building-rendering.png" alt="Neon Wheels building">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP + DIRECTIONS -->
+<section class="section">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="badge badge-yellow"><i class="fa-solid fa-map-location-dot"></i> Find Us</span>
+      <h2>Visit Our <span class="neon-text-yellow">Future Home</span></h2>
+      <p>Right in the heart of Lake County — building a safe haven for the families who need it most.</p>
+    </div>
+    <div class="reveal">
+      <div class="map-frame">
+        <iframe
+          src="https://maps.google.com/maps?q=600+N+Berwick+Blvd,+Waukegan,+IL+60085&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Neon Wheels Location Map"></iframe>
+      </div>
+      <div class="cta-row mt-3" style="justify-content:center;">
+        <a class="btn btn-pink" href="https://maps.google.com/?q=600+N+Berwick+Blvd+Waukegan+IL+60085" target="_blank" rel="noopener"><i class="fa-solid fa-diamond-turn-right"></i> Get Directions</a>
+        <a class="btn btn-outline" href="tel:+12246145495"><i class="fa-solid fa-phone"></i> Call +1 (224) 614-5495</a>
       </div>
     </div>
   </div>
@@ -53,41 +105,42 @@
 <!-- VISIONARY LEADERSHIP TEAM -->
 <section class="section">
   <div class="container">
-    <div class="section-title">
-      <h2>⭐ Visionary <span class="t-pink">Leadership Team</span> ⭐</h2>
+    <div class="section-title reveal">
+      <span class="badge badge-cyan"><i class="fa-solid fa-star"></i> Visionary Leadership Team <i class="fa-solid fa-star"></i></span>
+      <h2>Meet The <span class="neon-text-pink">Leaders</span></h2>
     </div>
     <div class="grid grid-3">
 
-      <div class="leader-card">
+      <div class="leader-card reveal">
         <div class="img-wrap"><img src="assets/images/edward.jpg" alt="Edward Houston"></div>
         <div class="body">
           <h3>Edward Houston</h3>
           <p class="role">Founder &amp; Visionary Leader</p>
           <p>A dedicated community advocate, mentor, and leader committed to creating opportunities, safe spaces, and brighter futures for youth and families throughout Lake County.</p>
-          <p><span class="t-pink">📞</span> (224) 614-5495<br>
-          <span class="t-pink">✉</span> info@neonwheels.org</p>
+          <p class="contact-line"><i class="fa-solid fa-phone"></i> (224) 614-5495</p>
+          <p class="contact-line"><i class="fa-solid fa-envelope"></i> info@neonwheelsrollerskating.org</p>
         </div>
       </div>
 
-      <div class="leader-card" style="border-color:rgba(20,225,255,0.4); box-shadow:0 0 30px var(--cyan-glow);">
+      <div class="leader-card cyan reveal">
         <div class="img-wrap"><img src="assets/images/barbara.jpg" alt="Barbara Washington-Houston"></div>
         <div class="body">
           <h3>Barbara Washington-Houston</h3>
           <p class="role">Founder &amp; Visionary Leader</p>
-          <p>A passionate leader focused on community, family empowerment, youth development, and building a lasting legacy through Neon Wheels.</p>
-          <p><span class="t-cyan">📞</span> (224) 614-5495<br>
-          <span class="t-cyan">✉</span> info@neonwheels.org</p>
+          <p>A passionate leader focused on community empowerment, youth development, and building a lasting legacy through Neon Wheels.</p>
+          <p class="contact-line"><i class="fa-solid fa-phone"></i> (224) 614-5495</p>
+          <p class="contact-line"><i class="fa-solid fa-envelope"></i> info@neonwheelsrollerskating.org</p>
         </div>
       </div>
 
-      <div class="leader-card" style="border-color:rgba(161,107,255,0.4); box-shadow:0 0 30px rgba(161,107,255,0.4);">
+      <div class="leader-card purple reveal">
         <div class="img-wrap"><img src="assets/images/sybria.jpg" alt="Sybria Davis"></div>
         <div class="body">
           <h3>Sybria Davis</h3>
           <p class="role">Visionary Leadership Team</p>
           <p>A committed leader dedicated to supporting youth empowerment, community outreach, and helping bring the Neon Wheels vision to reality for families across Lake County.</p>
-          <p><span class="t-purple">📞</span> (224) 614-5495<br>
-          <span class="t-purple">✉</span> info@neonwheels.org</p>
+          <p class="contact-line"><i class="fa-solid fa-phone"></i> (224) 614-5495</p>
+          <p class="contact-line"><i class="fa-solid fa-envelope"></i> info@neonwheelsrollerskating.org</p>
         </div>
       </div>
 
@@ -95,41 +148,38 @@
   </div>
 </section>
 
-<!-- LETS BUILD SOMETHING -->
+<!-- LETS BUILD + FORM -->
 <section class="section" style="background: linear-gradient(180deg, rgba(255,46,166,0.06), rgba(20,225,255,0.06));">
   <div class="container">
-    <div class="grid grid-2" style="gap:36px;">
-      <div>
-        <div class="icon-circle">🤝</div>
-        <h2><span class="t-pink">Let's Build</span> Something <span class="script t-cyan">Amazing Together!</span></h2>
-        <p>Whether you are interested in:</p>
-        <div class="grid grid-2">
-          <ul class="list-clean">
-            <li>Sponsorship opportunities</li>
-            <li>Donations</li>
-            <li>Community partnerships</li>
-          </ul>
-          <ul class="list-clean">
-            <li>Program collaborations</li>
-            <li>Corporate giving</li>
-            <li>Media inquiries</li>
-            <li>Volunteer opportunities</li>
-          </ul>
-        </div>
-        <p class="t-cyan" style="font-weight:700;">We would love to hear from you!</p>
+    <div class="grid grid-2" style="gap: 40px;">
 
-        <!-- CONTACT FORM -->
-        <form class="form mt-2" onsubmit="event.preventDefault(); alert('Thank you! Your message has been received. We will respond shortly.'); this.reset();">
+      <div class="reveal">
+        <span class="badge badge-pink"><i class="fa-solid fa-comments"></i> Let's Talk</span>
+        <h2 class="mt-2">Let's Build Something<br><span class="script t-cyan" style="font-size:1em;">Amazing Together!</span></h2>
+        <p>Whether you are interested in:</p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px;">
+          <span class="pill"><i class="fa-solid fa-handshake"></i> Sponsorship</span>
+          <span class="pill cyan"><i class="fa-solid fa-heart"></i> Donations</span>
+          <span class="pill yellow"><i class="fa-solid fa-people-roof"></i> Partnerships</span>
+          <span class="pill"><i class="fa-solid fa-graduation-cap"></i> Programs</span>
+          <span class="pill cyan"><i class="fa-solid fa-building"></i> Corporate Giving</span>
+          <span class="pill yellow"><i class="fa-solid fa-microphone"></i> Media</span>
+          <span class="pill"><i class="fa-solid fa-hands-holding-child"></i> Volunteering</span>
+        </div>
+        <p class="t-cyan fw-900 mt-3">We would love to hear from you!</p>
+
+        <!-- CONTACT FORM (mailto fallback — replace action with backend/Formspree URL when ready) -->
+        <form class="form mt-2 neon-card" id="contact-form">
           <div class="grid grid-2" style="gap:14px;">
-            <div><label>Your Name</label><input type="text" required placeholder="Jane Doe"></div>
-            <div><label>Your Email</label><input type="email" required placeholder="jane@example.com"></div>
+            <div><label>Your Name</label><input type="text" name="name" required placeholder="Jane Doe"></div>
+            <div><label>Your Email</label><input type="email" name="email" required placeholder="jane@example.com"></div>
           </div>
           <div class="grid grid-2" style="gap:14px;">
-            <div><label>Phone</label><input type="tel" placeholder="(555) 555-5555"></div>
+            <div><label>Phone</label><input type="tel" name="phone" placeholder="(555) 555-5555"></div>
             <div>
               <label>I'm Interested In</label>
-              <select>
-                <option>Sponsorship</option>
+              <select name="interest">
+                <option>Sponsorship Opportunities</option>
                 <option>Donation</option>
                 <option>Volunteering</option>
                 <option>Partnership</option>
@@ -139,42 +189,64 @@
             </div>
           </div>
           <label>Message</label>
-          <textarea required placeholder="Tell us how you'd like to get involved..."></textarea>
-          <button type="submit" class="btn btn-pink">♥ Send Message</button>
+          <textarea name="message" required placeholder="Tell us how you'd like to get involved..."></textarea>
+          <button type="submit" class="btn btn-pink" style="width:100%; justify-content:center;"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
         </form>
+        <script>
+          // Functional contact form — opens user's email client with pre-filled message
+          document.getElementById('contact-form').addEventListener('submit', function(e){
+            e.preventDefault();
+            var f = e.target;
+            var subject = encodeURIComponent('[Neon Wheels] ' + (f.interest.value || 'Inquiry') + ' from ' + f.name.value);
+            var body = encodeURIComponent(
+              'Name: ' + f.name.value + '\n' +
+              'Email: ' + f.email.value + '\n' +
+              'Phone: ' + (f.phone.value || 'n/a') + '\n' +
+              'Interest: ' + f.interest.value + '\n\n' +
+              'Message:\n' + f.message.value
+            );
+            window.location.href = 'mailto:info@neonwheelsrollerskating.org?subject=' + subject + '&body=' + body;
+          });
+        </script>
       </div>
 
-      <div>
-        <a href="contact.html" class="neon-card cyan" style="display:flex; gap:14px; align-items:center; text-decoration:none; margin-bottom:14px;">
-          <div class="icon-circle cyan" style="margin:0;">📞</div>
+      <div class="reveal">
+        <a href="contact.html" class="neon-card cyan" style="display:flex; gap:18px; align-items:center; text-decoration:none; margin-bottom:18px;">
+          <span class="icon-badge cyan" style="margin:0; min-width:64px;"><i class="fa-solid fa-headset"></i></span>
           <div>
-            <h3 class="t-cyan" style="margin:0;">Contact Our Team</h3>
+            <h3 class="t-cyan" style="margin-bottom:4px;">Contact Our Team</h3>
             <p style="margin:0;" class="t-soft">Let's start a conversation.</p>
           </div>
         </a>
-        <a href="partners.html" class="neon-card" style="display:flex; gap:14px; align-items:center; text-decoration:none; margin-bottom:14px;">
-          <div class="icon-circle" style="margin:0;">🤝</div>
+        <a href="partners.html" class="neon-card" style="display:flex; gap:18px; align-items:center; text-decoration:none; margin-bottom:18px;">
+          <span class="icon-badge" style="margin:0; min-width:64px;"><i class="fa-solid fa-handshake"></i></span>
           <div>
-            <h3 class="t-pink" style="margin:0;">Become a Sponsor</h3>
+            <h3 class="t-pink" style="margin-bottom:4px;">Become a Sponsor</h3>
             <p style="margin:0;" class="t-soft">Partner with us and make an impact.</p>
           </div>
         </a>
-        <a href="donate.html" class="neon-card yellow" style="display:flex; gap:14px; align-items:center; text-decoration:none; margin-bottom:14px;">
-          <div class="icon-circle yellow" style="margin:0;">♥</div>
+        <a href="donate.html" class="neon-card yellow" style="display:flex; gap:18px; align-items:center; text-decoration:none; margin-bottom:18px;">
+          <span class="icon-badge yellow" style="margin:0; min-width:64px;"><i class="fa-solid fa-heart"></i></span>
           <div>
-            <h3 class="t-yellow" style="margin:0;">Donate Today</h3>
+            <h3 class="t-yellow" style="margin-bottom:4px;">Donate Today</h3>
             <p style="margin:0;" class="t-soft">Your gift helps change lives.</p>
           </div>
         </a>
 
         <div class="neon-card purple">
-          <h3 class="t-purple">Contact Information</h3>
-          <ul class="list-clean">
-            <li><span class="t-cyan">📞</span> (224) 614-5495</li>
-            <li><span class="t-cyan">✉</span> info@neonwheels.org</li>
-            <li><span class="t-cyan">🌐</span> www.neonwheels.org</li>
-            <li><span class="t-cyan">📍</span> Lake County, Illinois</li>
+          <h3 class="t-purple"><i class="fa-solid fa-address-card"></i> Contact Information</h3>
+          <ul class="list-clean" style="font-size:0.95rem;">
+            <li><i class="fa-solid fa-phone t-cyan"></i> &nbsp; <a href="tel:+12246145495">+1 (224) 614-5495</a></li>
+            <li><i class="fa-solid fa-envelope t-cyan"></i> &nbsp; <a href="mailto:info@neonwheelsrollerskating.org">info@neonwheelsrollerskating.org</a></li>
+            <li><i class="fa-solid fa-globe t-cyan"></i> &nbsp; <a href="https://www.neonwheelsrollerskating.org">www.neonwheelsrollerskating.org</a></li>
+            <li><i class="fa-solid fa-location-dot t-cyan"></i> &nbsp; <a href="https://maps.google.com/?q=600+N+Berwick+Blvd+Waukegan+IL+60085" target="_blank" rel="noopener">600 N Berwick Blvd<br>&nbsp; &nbsp; &nbsp; &nbsp; Waukegan, IL 60085, USA</a></li>
           </ul>
+          <div class="social-row" style="margin-top:14px;">
+            <span><i class="fa-brands fa-facebook-f"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+            <span><i class="fa-brands fa-tiktok"></i></span>
+            <span><i class="fa-brands fa-youtube"></i></span>
+          </div>
         </div>
       </div>
     </div>
@@ -183,10 +255,10 @@
 
 <!-- FINAL TAGLINE -->
 <section class="section-sm" style="background: linear-gradient(90deg, rgba(255,46,166,0.10), rgba(20,225,255,0.10));">
-  <div class="container t-center">
+  <div class="container t-center reveal">
     <p class="script t-pink" style="font-size:2rem; margin-bottom:0;">A future, safe haven</p>
     <p>where youth, families, and community</p>
-    <p style="font-weight:800; font-size:1.3rem;">CAN <span class="t-cyan">SKATE.</span> <span class="t-pink">CONNECT.</span> <span class="t-yellow">AND THRIVE.</span></p>
+    <p style="font-weight:800; font-size:1.6rem;">CAN <span class="neon-text-cyan">SKATE.</span> <span class="neon-text-pink">CONNECT.</span> <span class="neon-text-yellow">AND THRIVE.</span></p>
   </div>
 </section>
 
@@ -195,21 +267,38 @@
     <div class="footer-grid">
       <div class="footer-logo">
         <img src="assets/images/logo.png" alt="Neon Wheels">
-        <p class="mt-2">A safe, vibrant community hub where Lake County youth and families can <span class="t-cyan">Skate</span>, <span class="t-pink">Connect</span>, and <span class="t-yellow">Thrive</span>.</p>
+        <p>A safe, vibrant community hub where Lake County youth and families can <span class="t-cyan">Skate</span>, <span class="t-pink">Connect</span>, and <span class="t-yellow">Thrive</span>.</p>
+        <div class="social-row">
+          <span><i class="fa-brands fa-facebook-f"></i></span><span><i class="fa-brands fa-instagram"></i></span><span><i class="fa-brands fa-tiktok"></i></span><span><i class="fa-brands fa-youtube"></i></span><a href="mailto:info@neonwheelsrollerskating.org"><i class="fa-solid fa-envelope"></i></a>
+        </div>
       </div>
       <div><h4>Quick Links</h4><ul>
-        <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="impact.html">Impact</a></li><li><a href="leadership.html">Leadership</a></li>
+        <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
+        <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i>About Us</a></li>
+        <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i>Programs</a></li>
+        <li><a href="impact.html"><i class="fa-solid fa-chevron-right"></i>Impact</a></li>
+        <li><a href="leadership.html"><i class="fa-solid fa-chevron-right"></i>Leadership</a></li>
       </ul></div>
       <div><h4>Get Involved</h4><ul>
-        <li><a href="donate.html">Donate</a></li><li><a href="partners.html">Partners</a></li><li><a href="business-plan.html">5-Year Plan</a></li><li><a href="contact.html">Contact</a></li><li><a href="thank-you.html">Thank You</a></li>
+        <li><a href="donate.html"><i class="fa-solid fa-heart"></i>Donate</a></li>
+        <li><a href="partners.html"><i class="fa-solid fa-handshake"></i>Partners</a></li>
+        <li><a href="business-plan.html"><i class="fa-solid fa-chart-line"></i>5-Year Plan</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        <li><a href="thank-you.html"><i class="fa-solid fa-star"></i>Thank You</a></li>
       </ul></div>
       <div><h4>Contact</h4><ul>
-        <li>📞 (224) 614-5495</li><li>✉ info@neonwheels.org</li><li>🌐 www.neonwheels.org</li><li>📍 Lake County, Illinois</li>
-      </ul></div>
+        <li><i class="fa-solid fa-phone"></i><a href="tel:+12246145495">+1 (224) 614-5495</a></li>
+        <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@neonwheelsrollerskating.org">info@neonwheelsrollerskating.org</a></li>
+        <li><i class="fa-solid fa-globe"></i><a href="https://www.neonwheelsrollerskating.org">www.neonwheelsrollerskating.org</a></li>
+        <li><i class="fa-solid fa-location-dot"></i><a href="https://maps.google.com/?q=600+N+Berwick+Blvd+Waukegan+IL+60085" target="_blank" rel="noopener">600 N Berwick Blvd<br>Waukegan, IL 60085</a></li>
+      </ul>
+        <div style="margin-top:14px;"><span class="badge badge-cyan"><i class="fa-solid fa-shield-halved"></i> 501(c)(3) Nonprofit</span></div>
+      </div>
     </div>
-    <div class="footer-copy">© 2026 Neon Wheels Roller Skating Rink &amp; Fun Center. All Rights Reserved. • 501(c)(3) Nonprofit • EIN: 93-4851977</div>
+    <div class="footer-copy">© 2026 Neon Wheels Roller Skating Rink &amp; Fun Center. All Rights Reserved. • EIN: 93-4851977 • All donations tax-deductible</div>
   </div>
 </footer>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>

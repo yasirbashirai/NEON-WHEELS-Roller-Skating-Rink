@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Donate | Neon Wheels Roller Skating Rink & Fun Center</title>
-<meta name="description" content="Give today. Help build a safe haven. Multiple ways to give — CashApp, Zelle, Google Pay, Credit Card, ACH, and more.">
+<meta name="description" content="Give today. Help build a safe haven. Multiple secure ways to give — CashApp, Zelle, Google Pay, Credit Card, ACH, and QR.">
 <link rel="icon" type="image/png" href="assets/images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
 <header class="site-header">
   <div class="nav-wrap">
     <a class="logo-link" href="index.html"><img src="assets/images/logo.png" alt="Neon Wheels"></a>
-    <button class="nav-toggle" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <button class="nav-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
     <ul class="nav-menu" id="nav">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
@@ -27,22 +28,29 @@
       <li><a href="business-plan.html">5-Year Plan</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <a href="donate.html" class="btn btn-pink nav-cta">♥ Donate Now</a>
+    <a href="donate.html" class="btn btn-pink btn-sm active"><i class="fa-solid fa-heart"></i> Donate Now</a>
   </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
   <div class="container">
     <div class="hero-grid">
-      <div>
-        <h1>Give Today.<br><span class="t-cyan">Help Build</span><br><span class="t-pink">A Safe Haven.</span></h1>
-        <p>Neon Wheels is more than a building. It is a vision for safety, hope, recreation, mentorship, wellness, financial literacy, workforce readiness, and family connection.</p>
-        <p class="script t-pink" style="font-size:1.3rem;">Your gift helps us bring this vision to life for youth, families, and the Lake County community.</p>
+      <div class="reveal">
+        <span class="badge badge-pink mb-2"><i class="fa-solid fa-heart"></i> Donate</span>
+        <h1>Give Today.<br><span class="neon-text-cyan">Help Build</span><br><span class="neon-text-pink">A Safe Haven.</span></h1>
+        <p class="lead">Neon Wheels is more than a building. It is a vision for safety, hope, recreation, mentorship, wellness, financial literacy, workforce readiness, and family connection.</p>
+        <p class="script t-pink" style="font-size:1.4rem;">Your gift helps us bring this vision to life for youth, families, and the Lake County community.</p>
+        <div class="cta-row mt-2">
+          <a class="btn btn-pink pulse" href="#ways"><i class="fa-solid fa-arrow-down"></i> See Ways To Give</a>
+        </div>
       </div>
-      <div style="position:relative;">
-        <img src="assets/images/building-rendering.png" alt="Neon Wheels Building">
-        <div class="heart-box" style="position:absolute; right:-10px; bottom:-10px; max-width:180px;">
-          <p class="script t-pink" style="margin:0; font-size:1.1rem;">Every gift<br>changes lives!</p>
+      <div class="reveal" style="position:relative;">
+        <div class="neon-frame pink">
+          <img src="assets/images/building-rendering.png" alt="Neon Wheels building rendering">
+        </div>
+        <div class="heart-box floaty" style="position:absolute; right:-12px; bottom:-12px; max-width:200px;">
+          <p class="script t-pink" style="margin:0; font-size:1.2rem;">Every gift<br>changes lives!</p>
         </div>
       </div>
     </div>
@@ -52,21 +60,21 @@
 <!-- IMPACT STRIP -->
 <section class="section-sm">
   <div class="container grid grid-2">
-    <div class="neon-card">
-      <div style="display:flex; gap:14px; align-items:center;">
-        <div class="icon-circle">♥</div>
+    <div class="neon-card reveal">
+      <div style="display:flex; gap:18px; align-items:center;">
+        <span class="icon-badge lg" style="margin:0; min-width:84px;"><i class="fa-solid fa-heart"></i></span>
         <div>
-          <h3 class="t-pink">Every Gift Matters</h3>
-          <p style="margin:0;">Whether you give $25, $250, $2,500, or become a founding donor, your generosity helps create a place where young people can feel safe, families can gather, and futures can change.</p>
+          <h3 class="neon-text-pink">Every Gift Matters</h3>
+          <p style="margin:0;">Whether you give $25, $250, $2,500, or become a founding donor, your generosity helps create a place where young people feel safe, families gather, and futures change.</p>
         </div>
       </div>
     </div>
-    <div class="neon-card cyan">
-      <div style="display:flex; gap:14px; align-items:center;">
-        <div class="icon-circle cyan">🛡</div>
+    <div class="neon-card cyan reveal">
+      <div style="display:flex; gap:18px; align-items:center;">
+        <span class="icon-badge cyan lg" style="margin:0; min-width:84px;"><i class="fa-solid fa-shield-halved"></i></span>
         <div>
-          <h3 class="t-cyan">Neon Wheels is a 501(c)(3)</h3>
-          <p style="margin:0;">All donations are tax deductible.</p>
+          <h3 class="neon-text-cyan">501(c)(3) Tax-Deductible</h3>
+          <p style="margin:0;">All donations are tax deductible to the fullest extent of the law. EIN: 93-4851977</p>
           <p class="script t-pink" style="margin:0;">Thank you for your support!</p>
         </div>
       </div>
@@ -75,72 +83,84 @@
 </section>
 
 <!-- WAYS TO GIVE -->
-<section class="section">
+<section class="section" id="ways">
   <div class="container">
-    <div class="section-title">
-      <h2>Ways <span class="t-pink">to Give</span></h2>
+    <div class="section-title reveal">
+      <span class="badge badge-yellow"><i class="fa-solid fa-gift"></i> Ways to Give</span>
+      <h2>Ways <span class="neon-text-pink">to Give</span></h2>
+      <p>Choose the way that's easiest for you. Every method goes directly to building Neon Wheels.</p>
     </div>
+
     <div class="grid grid-4">
-      <div class="card t-center">
-        <div style="font-size:2.4rem; background: var(--green); color:#001; border-radius:14px; width:64px; height:64px; display:flex; align-items:center; justify-content:center; font-weight:900; margin:0 auto 14px;">$</div>
+      <div class="neon-card green reveal t-center">
+        <div class="flex-center" style="width:72px; height:72px; border-radius:18px; margin:0 auto 14px; background: var(--green); color:#003; font-weight:900; font-size:1.8rem; box-shadow:0 0 20px var(--green-glow);"><i class="fa-solid fa-dollar-sign"></i></div>
         <h3 style="color:var(--green);">CashApp</h3>
-        <p style="margin:0;"><strong>$NeonWheelsRink</strong></p>
-        <p class="t-mute" style="font-size:0.85rem;">Quick. Easy. Secure. Every dollar helps.</p>
+        <p class="fw-900 t-white" style="font-size:1.1rem;">$NeonWheelsRink</p>
+        <p class="t-mute" style="font-size:0.85rem;">Quick. Easy. Secure.<br>Every dollar helps.</p>
       </div>
-      <div class="card t-center">
-        <div style="font-size:2.4rem; background: var(--purple); color:#fff; border-radius:14px; width:64px; height:64px; display:flex; align-items:center; justify-content:center; font-weight:900; margin:0 auto 14px;">Z</div>
+      <div class="neon-card purple reveal t-center">
+        <div class="flex-center" style="width:72px; height:72px; border-radius:18px; margin:0 auto 14px; background: var(--purple); color:#fff; font-weight:900; font-size:1.8rem; box-shadow:0 0 20px var(--purple-glow);">Z</div>
         <h3 class="t-purple">Zelle</h3>
-        <p style="margin:0;">Send to <strong>info@neonwheels.org</strong></p>
-        <p class="t-mute" style="font-size:0.85rem;">Fast and secure direct giving.</p>
+        <p class="fw-900 t-white" style="font-size:0.95rem;">info@neonwheelsrollerskating.org</p>
+        <p class="t-mute" style="font-size:0.85rem;">Fast &amp; secure direct giving.</p>
       </div>
-      <div class="card t-center">
-        <div style="font-size:2.4rem; background: #fff; color:#0a0; border-radius:14px; width:64px; height:64px; display:flex; align-items:center; justify-content:center; font-weight:900; margin:0 auto 14px;">G</div>
-        <h3 style="color:#fff;">Google Pay</h3>
-        <p style="margin:0;">Search <strong>info@neonwheels.org</strong></p>
+      <div class="neon-card reveal t-center">
+        <div class="flex-center" style="width:72px; height:72px; border-radius:18px; margin:0 auto 14px; background: linear-gradient(135deg, #4285f4 0%, #ea4335 33%, #fbbc04 66%, #34a853 100%); color:#fff; font-weight:900; font-size:1.8rem; box-shadow:0 0 20px rgba(66,133,244,0.5);"><i class="fa-brands fa-google-pay"></i></div>
+        <h3 class="t-pink">Google Pay</h3>
+        <p class="fw-900 t-white" style="font-size:0.95rem;">info@neonwheelsrollerskating.org</p>
         <p class="t-mute" style="font-size:0.85rem;">Simple. Safe. Instant impact.</p>
       </div>
-      <div class="card t-center">
-        <div style="font-size:1.6rem; background: linear-gradient(135deg,var(--pink),var(--purple)); color:#fff; border-radius:14px; width:64px; height:64px; display:flex; align-items:center; justify-content:center; font-weight:900; margin:0 auto 14px;">💳</div>
+      <div class="neon-card reveal t-center">
+        <div class="flex-center" style="width:72px; height:72px; border-radius:18px; margin:0 auto 14px; background: linear-gradient(135deg, var(--pink), var(--purple)); color:#fff; font-weight:900; font-size:1.8rem; box-shadow:0 0 20px var(--pink-glow);"><i class="fa-solid fa-credit-card"></i></div>
         <h3 class="t-pink">Credit Card</h3>
-        <p style="margin:0;">Give securely online</p>
-        <p class="t-mute" style="font-size:0.85rem;">Visa, Mastercard, American Express, Discover and more.</p>
+        <p class="t-white">Give securely online</p>
+        <p class="t-mute" style="font-size:0.85rem;">Visa • Mastercard • Amex • Discover</p>
       </div>
     </div>
 
     <div class="grid grid-3 mt-3">
-      <div class="card">
-        <div style="display:flex; gap:14px; align-items:center;">
-          <div class="icon-circle cyan">🏦</div>
+      <div class="card reveal">
+        <div style="display:flex; gap:16px; align-items:center;">
+          <span class="icon-badge cyan"><i class="fa-solid fa-building-columns"></i></span>
           <div>
-            <h3 class="t-cyan">ACH Bank Transfer</h3>
+            <h3 class="t-cyan" style="margin-bottom:4px;">ACH Bank Transfer</h3>
             <p style="margin:0;">Make a direct transfer from your bank account. Secure. Reliable.</p>
           </div>
         </div>
       </div>
-      <div class="card">
-        <div style="display:flex; gap:14px; align-items:center;">
-          <div style="width:74px; height:74px; background:#000; border:2px solid var(--yellow); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:2rem;">🔲</div>
+      <div class="card reveal">
+        <div style="display:flex; gap:16px; align-items:center;">
+          <div style="width:84px; height:84px; background:#fff; border:3px solid var(--yellow); border-radius:14px; display:flex; align-items:center; justify-content:center; box-shadow:0 0 20px var(--yellow-glow); flex-shrink:0;">
+            <i class="fa-solid fa-qrcode" style="font-size:3rem; color:#000;"></i>
+          </div>
           <div>
-            <h3 class="t-yellow">QR Code</h3>
-            <p style="margin:0;">Scan the QR code below to give instantly.</p>
+            <h3 class="t-yellow" style="margin-bottom:4px;">QR Code</h3>
+            <p style="margin:0;">Scan to give instantly from your phone.</p>
           </div>
         </div>
       </div>
-      <div class="card">
-        <div style="display:flex; gap:14px; align-items:center;">
-          <div class="icon-circle">🔗</div>
+      <div class="card reveal">
+        <div style="display:flex; gap:16px; align-items:center;">
+          <span class="icon-badge"><i class="fa-solid fa-link"></i></span>
           <div>
-            <h3 class="t-pink">Digital Payment Link</h3>
-            <p style="margin:0;">Click the link below to give quickly and securely.</p>
+            <h3 class="t-pink" style="margin-bottom:4px;">Digital Payment Link</h3>
+            <p style="margin:0;">Quick &amp; secure online giving.</p>
+            <a class="btn btn-pink btn-sm mt-1" href="#"><i class="fa-solid fa-heart"></i> Give Now</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="neon-card mt-3 t-center" style="max-width:520px; margin-left:auto; margin-right:auto;">
-      <h3 class="t-pink">Give Now</h3>
-      <p>Click below to give using your preferred payment method.</p>
-      <a class="btn btn-pink" href="#" onclick="alert('Payment integration to be configured by client.'); return false;">♥ Give Now</a>
+<!-- BIG CTA -->
+<section class="section-sm">
+  <div class="container">
+    <div class="neon-card reveal t-center" style="max-width:680px; margin: 0 auto;">
+      <span class="icon-badge lg" style="margin: 0 auto 16px;"><i class="fa-solid fa-heart"></i></span>
+      <h2 class="neon-text-pink">Give Now</h2>
+      <p class="text-lg">Click below to give using your preferred payment method.</p>
+      <a class="btn btn-pink pulse" href="#" style="font-size:1.1rem; padding:16px 36px;"><i class="fa-solid fa-heart"></i> Donate Now</a>
     </div>
   </div>
 </section>
@@ -148,15 +168,15 @@
 <!-- LEGACY MESSAGE -->
 <section class="section" style="background: linear-gradient(90deg, rgba(255,46,166,0.08), rgba(20,225,255,0.08));">
   <div class="container">
-    <div class="grid grid-2" style="gap:30px; align-items:center;">
-      <div>
-        <div class="icon-circle">🤲</div>
-        <h2><span class="t-pink">Your Gift Builds</span> More Than a Rink.</h2>
-        <p>It builds a safe haven. It builds leaders. It builds stronger families. It builds a brighter future for Lake County.</p>
+    <div class="grid grid-2" style="gap: 30px; align-items: center;">
+      <div class="reveal">
+        <span class="icon-badge"><i class="fa-solid fa-hand-holding-heart"></i></span>
+        <h2>Your Gift Builds<br><span class="neon-text-pink">More Than a Rink.</span></h2>
+        <p class="text-lg">It builds a safe haven. It builds leaders. It builds stronger families. It builds a brighter future for Lake County.</p>
       </div>
-      <div class="t-center">
-        <p class="script t-cyan" style="font-size:1.6rem; margin-bottom:6px;">Together, we can create more than a skating rink.</p>
-        <p class="script t-pink" style="font-size:2rem;">We can create a legacy.</p>
+      <div class="reveal t-center">
+        <p class="script t-cyan" style="font-size:1.8rem; margin-bottom:4px;">Together, we can create more than a skating rink.</p>
+        <p class="script t-pink" style="font-size:2.4rem; margin:0;">We can create a legacy.</p>
       </div>
     </div>
   </div>
@@ -164,10 +184,10 @@
 
 <!-- THANK YOU -->
 <section class="section-sm">
-  <div class="container t-center">
-    <h2>Be a Part of the <span class="t-pink">Change</span></h2>
-    <p>Every gift — big or small — makes a difference. Thank you for believing in our vision and helping us build a safe haven for our community.</p>
-    <p class="script t-pink" style="font-size:1.8rem;">We appreciate you! ♥</p>
+  <div class="container t-center reveal">
+    <h2>Be a Part of the <span class="neon-text-pink">Change</span></h2>
+    <p class="text-lg">Every gift — big or small — makes a difference. Thank you for believing in our vision and helping us build a safe haven for our community.</p>
+    <p class="script t-pink" style="font-size:2rem;"><i class="fa-solid fa-heart"></i> We appreciate you! <i class="fa-solid fa-heart"></i></p>
   </div>
 </section>
 
@@ -176,21 +196,38 @@
     <div class="footer-grid">
       <div class="footer-logo">
         <img src="assets/images/logo.png" alt="Neon Wheels">
-        <p class="mt-2">A safe, vibrant community hub where Lake County youth and families can <span class="t-cyan">Skate</span>, <span class="t-pink">Connect</span>, and <span class="t-yellow">Thrive</span>.</p>
+        <p>A safe, vibrant community hub where Lake County youth and families can <span class="t-cyan">Skate</span>, <span class="t-pink">Connect</span>, and <span class="t-yellow">Thrive</span>.</p>
+        <div class="social-row">
+          <span><i class="fa-brands fa-facebook-f"></i></span><span><i class="fa-brands fa-instagram"></i></span><span><i class="fa-brands fa-tiktok"></i></span><span><i class="fa-brands fa-youtube"></i></span><a href="mailto:info@neonwheelsrollerskating.org"><i class="fa-solid fa-envelope"></i></a>
+        </div>
       </div>
       <div><h4>Quick Links</h4><ul>
-        <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="impact.html">Impact</a></li><li><a href="leadership.html">Leadership</a></li>
+        <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
+        <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i>About Us</a></li>
+        <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i>Programs</a></li>
+        <li><a href="impact.html"><i class="fa-solid fa-chevron-right"></i>Impact</a></li>
+        <li><a href="leadership.html"><i class="fa-solid fa-chevron-right"></i>Leadership</a></li>
       </ul></div>
       <div><h4>Get Involved</h4><ul>
-        <li><a href="donate.html">Donate</a></li><li><a href="partners.html">Partners</a></li><li><a href="business-plan.html">5-Year Plan</a></li><li><a href="contact.html">Contact</a></li><li><a href="thank-you.html">Thank You</a></li>
+        <li><a href="donate.html"><i class="fa-solid fa-heart"></i>Donate</a></li>
+        <li><a href="partners.html"><i class="fa-solid fa-handshake"></i>Partners</a></li>
+        <li><a href="business-plan.html"><i class="fa-solid fa-chart-line"></i>5-Year Plan</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        <li><a href="thank-you.html"><i class="fa-solid fa-star"></i>Thank You</a></li>
       </ul></div>
       <div><h4>Contact</h4><ul>
-        <li>📞 (224) 614-5495</li><li>✉ info@neonwheels.org</li><li>🌐 www.neonwheels.org</li><li>📍 Lake County, Illinois</li>
-      </ul></div>
+        <li><i class="fa-solid fa-phone"></i><a href="tel:+12246145495">+1 (224) 614-5495</a></li>
+        <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@neonwheelsrollerskating.org">info@neonwheelsrollerskating.org</a></li>
+        <li><i class="fa-solid fa-globe"></i><a href="https://www.neonwheelsrollerskating.org">www.neonwheelsrollerskating.org</a></li>
+        <li><i class="fa-solid fa-location-dot"></i><a href="https://maps.google.com/?q=600+N+Berwick+Blvd+Waukegan+IL+60085" target="_blank" rel="noopener">600 N Berwick Blvd<br>Waukegan, IL 60085</a></li>
+      </ul>
+        <div style="margin-top:14px;"><span class="badge badge-cyan"><i class="fa-solid fa-shield-halved"></i> 501(c)(3) Nonprofit</span></div>
+      </div>
     </div>
-    <div class="footer-copy">© 2026 Neon Wheels Roller Skating Rink &amp; Fun Center. All Rights Reserved. • 501(c)(3) Nonprofit • EIN: 93-4851977</div>
+    <div class="footer-copy">© 2026 Neon Wheels Roller Skating Rink &amp; Fun Center. All Rights Reserved. • EIN: 93-4851977 • All donations tax-deductible</div>
   </div>
 </footer>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>

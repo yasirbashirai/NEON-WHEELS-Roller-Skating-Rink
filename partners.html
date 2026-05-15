@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Partners & Sponsors | Neon Wheels Roller Skating Rink & Fun Center</title>
-<meta name="description" content="Partner with Neon Wheels — help us bring the vision to reality. Sponsorship opportunities, levels, and benefits.">
+<meta name="description" content="Partner with Neon Wheels — sponsorship opportunities, levels, and benefits for businesses, foundations, churches, and community leaders.">
 <link rel="icon" type="image/png" href="assets/images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
 <header class="site-header">
   <div class="nav-wrap">
     <a class="logo-link" href="index.html"><img src="assets/images/logo.png" alt="Neon Wheels"></a>
-    <button class="nav-toggle" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <button class="nav-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
     <ul class="nav-menu" id="nav">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
@@ -27,24 +28,28 @@
       <li><a href="business-plan.html">5-Year Plan</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <a href="donate.html" class="btn btn-pink nav-cta">♥ Donate</a>
+    <a href="donate.html" class="btn btn-pink btn-sm"><i class="fa-solid fa-heart"></i> Donate</a>
   </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
   <div class="container">
     <div class="hero-grid">
-      <div>
-        <h1>Partner With <span class="t-pink">Neon Wheels</span></h1>
-        <p class="script t-pink" style="font-size:1.6rem;">Help Us Bring the Vision to Reality</p>
-        <p>Neon Wheels Roller Skating Rink &amp; Fun Center is calling on businesses, philanthropists, churches, foundations, community leaders, and corporate sponsors to partner with us in building a safe, vibrant destination for youth, families, and the Lake County community.</p>
-        <div class="cta-row mt-2">
-          <a class="btn btn-pink" href="#levels">Become a Sponsor</a>
-          <a class="btn btn-outline" href="contact.html">Schedule a Meeting</a>
+      <div class="reveal">
+        <span class="badge badge-pink mb-2"><i class="fa-solid fa-handshake"></i> Partner With Us</span>
+        <h1>Partner With<br><span class="neon-text-pink">Neon Wheels</span></h1>
+        <p class="script t-cyan" style="font-size:1.6rem; margin-top:-6px;">Help Us Bring the Vision to Reality</p>
+        <p class="lead">Neon Wheels Roller Skating Rink &amp; Fun Center is calling on businesses, philanthropists, churches, foundations, community leaders, and corporate sponsors to partner with us in building a safe, vibrant destination for youth, families, and the Lake County community.</p>
+        <div class="cta-row mt-3">
+          <a class="btn btn-pink" href="#levels"><i class="fa-solid fa-medal"></i> View Sponsorship Levels</a>
+          <a class="btn btn-outline" href="contact.html"><i class="fa-solid fa-calendar"></i> Schedule a Meeting</a>
         </div>
       </div>
-      <div>
-        <img src="assets/images/building-rendering.png" alt="Neon Wheels Rink rendering">
+      <div class="reveal">
+        <div class="neon-frame">
+          <img src="assets/images/building-rendering.png" alt="Neon Wheels building rendering">
+        </div>
       </div>
     </div>
   </div>
@@ -53,152 +58,147 @@
 <!-- WHY PARTNER -->
 <section class="section">
   <div class="container">
-    <div class="section-title">
-      <h2>Why Partner <span class="t-pink">With Us</span></h2>
+    <div class="section-title reveal">
+      <span class="badge badge-cyan">Why Partner</span>
+      <h2>Why Partner <span class="neon-text-pink">With Us</span></h2>
     </div>
     <div class="grid grid-4">
-      <div class="card t-center">
-        <div class="icon-circle" style="margin:0 auto 12px;">🛡</div>
+      <div class="neon-card reveal t-center">
+        <span class="icon-badge"><i class="fa-solid fa-shield-halved"></i></span>
         <h3 class="t-pink">A Safe Haven for Youth</h3>
         <p>A positive place where young people can gather, skate, learn, and grow.</p>
       </div>
-      <div class="card t-center">
-        <div class="icon-circle cyan" style="margin:0 auto 12px;">👨‍👩‍👧</div>
+      <div class="neon-card cyan reveal t-center">
+        <span class="icon-badge cyan"><i class="fa-solid fa-people-roof"></i></span>
         <h3 class="t-cyan">Family-Centered Recreation</h3>
-        <p>A welcoming environment where families can connect, celebrate, and make lasting memories.</p>
+        <p>A welcoming environment where families connect, celebrate, and make lasting memories.</p>
       </div>
-      <div class="card t-center">
-        <div class="icon-circle yellow" style="margin:0 auto 12px;">💗</div>
+      <div class="neon-card yellow reveal t-center">
+        <span class="icon-badge yellow"><i class="fa-solid fa-heart-pulse"></i></span>
         <h3 class="t-yellow">Programs That Change Lives</h3>
         <p>Mentorship, financial literacy, STEM, wellness, workforce readiness, and violence prevention programs.</p>
       </div>
-      <div class="card t-center">
-        <div class="icon-circle purple" style="margin:0 auto 12px;">🌎</div>
+      <div class="neon-card purple reveal t-center">
+        <span class="icon-badge purple"><i class="fa-solid fa-earth-americas"></i></span>
         <h3 class="t-purple">Community Transformation</h3>
-        <p>A facility designed to strengthen families, reduce crime, and provide opportunity under one roof.</p>
+        <p>Strengthen families, reduce crime, and provide opportunity under one roof.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- PARTNERSHIP OPPORTUNITIES -->
-<section class="section" style="background: linear-gradient(180deg, rgba(20,225,255,0.05), rgba(255,46,166,0.05));">
+<section class="section" style="background: linear-gradient(180deg, rgba(20,225,255,0.06), rgba(255,46,166,0.06));">
   <div class="container">
-    <div class="section-title">
-      <h2>Partnership <span class="t-pink">Opportunities</span></h2>
+    <div class="section-title reveal">
+      <span class="badge badge-yellow">Opportunities</span>
+      <h2>Partnership <span class="neon-text-pink">Opportunities</span></h2>
     </div>
-    <div class="grid grid-6">
-      <div class="card t-center">
-        <div class="icon-circle" style="margin:0 auto 10px;">💎</div>
-        <h3 class="t-pink" style="font-size:1rem;">Founding Vision Partner</h3>
-        <p style="font-size:0.85rem;">Premier recognition for major donors and sponsors helping bring Neon Wheels to life.</p>
+    <div class="grid grid-3">
+      <div class="card reveal">
+        <span class="icon-badge"><i class="fa-solid fa-gem"></i></span>
+        <h3 class="t-pink">Founding Vision Partner</h3>
+        <p>Premier recognition for major donors and sponsors helping bring Neon Wheels to life.</p>
       </div>
-      <div class="card t-center">
-        <div class="icon-circle cyan" style="margin:0 auto 10px;">🏛</div>
-        <h3 class="t-cyan" style="font-size:1rem;">Facility Naming Sponsor</h3>
-        <p style="font-size:0.85rem;">High-level sponsorship opportunities for naming rights within the facility.</p>
+      <div class="card reveal">
+        <span class="icon-badge cyan"><i class="fa-solid fa-building-columns"></i></span>
+        <h3 class="t-cyan">Facility Naming Sponsor</h3>
+        <p>High-level sponsorship for naming rights within the facility.</p>
       </div>
-      <div class="card t-center">
-        <div class="icon-circle yellow" style="margin:0 auto 10px;">📚</div>
-        <h3 class="t-yellow" style="font-size:1rem;">Program Sponsor</h3>
-        <p style="font-size:0.85rem;">Support youth mentorship, financial literacy, STEM, wellness, workforce readiness, or safe recreation programs.</p>
+      <div class="card reveal">
+        <span class="icon-badge yellow"><i class="fa-solid fa-book-open-reader"></i></span>
+        <h3 class="t-yellow">Program Sponsor</h3>
+        <p>Support youth mentorship, financial literacy, STEM, wellness, workforce readiness, or safe recreation programs.</p>
       </div>
-      <div class="card t-center">
-        <div class="icon-circle green" style="margin:0 auto 10px;">🎉</div>
-        <h3 style="color:var(--green); font-size:1rem;">Event Sponsor</h3>
-        <p style="font-size:0.85rem;">Sponsor community events, family nights, teen nights, school outings, and outreach events.</p>
+      <div class="card reveal">
+        <span class="icon-badge green"><i class="fa-solid fa-champagne-glasses"></i></span>
+        <h3 style="color:var(--green);">Event Sponsor</h3>
+        <p>Sponsor community events, family nights, teen nights, school outings, and outreach events.</p>
       </div>
-      <div class="card t-center">
-        <div class="icon-circle purple" style="margin:0 auto 10px;">🤝</div>
-        <h3 class="t-purple" style="font-size:1rem;">In-Kind Partnership</h3>
-        <p style="font-size:0.85rem;">Contribute materials, equipment, construction services, technology, food, furniture, professional services, or supplies.</p>
+      <div class="card reveal">
+        <span class="icon-badge purple"><i class="fa-solid fa-boxes-stacked"></i></span>
+        <h3 class="t-purple">In-Kind Partnership</h3>
+        <p>Contribute materials, equipment, construction services, technology, food, furniture, or professional services.</p>
       </div>
-      <div class="card t-center">
-        <div class="icon-circle orange" style="margin:0 auto 10px;">🏢</div>
-        <h3 style="color:var(--orange); font-size:1rem;">Corporate Community Partner</h3>
-        <p style="font-size:0.85rem;">Align your company with a high-impact community project serving youth and families across Lake County.</p>
+      <div class="card reveal">
+        <span class="icon-badge orange"><i class="fa-solid fa-building"></i></span>
+        <h3 style="color:var(--orange);">Corporate Community Partner</h3>
+        <p>Align your company with a high-impact community project serving youth and families across Lake County.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- HOW TO BECOME A SPONSOR -->
+<!-- HOW TO BECOME A SPONSOR + LEVELS -->
 <section class="section">
   <div class="container">
-    <div class="grid grid-2" style="gap:40px; align-items:start;">
+    <div class="grid grid-2" style="gap: 50px; align-items: start;">
 
-      <div>
-        <h2>How to Become a <span class="t-pink">Sponsor</span></h2>
-        <p class="script t-cyan" style="font-size:1.4rem;">Partnering With Neon Wheels Is Simple</p>
+      <div class="reveal">
+        <span class="badge badge-pink"><i class="fa-solid fa-list-ol"></i> 3 Simple Steps</span>
+        <h2 class="mt-2">How to Become<br>a <span class="neon-text-pink">Sponsor</span></h2>
+        <p class="script t-cyan" style="font-size:1.4rem;">Partnering with Neon Wheels is simple</p>
 
-        <div class="card" style="display:flex; gap:18px; align-items:flex-start; margin-bottom:18px;">
-          <div style="font-size:2rem; font-weight:900;" class="t-pink">1</div>
+        <div class="neon-card mt-2" style="display:flex; gap:18px; align-items:flex-start;">
+          <div class="icon-badge" style="margin:0; min-width:64px;"><strong>1</strong></div>
           <div>
-            <h3 class="t-pink" style="margin-bottom:4px;">Choose Your Partnership Level</h3>
+            <h3 class="t-pink" style="margin-bottom:6px;">Choose Your Partnership Level</h3>
             <p style="margin:0;">Select a sponsorship opportunity that aligns with your mission, values, and community goals.</p>
           </div>
         </div>
 
-        <div class="card" style="display:flex; gap:18px; align-items:flex-start; margin-bottom:18px;">
-          <div style="font-size:2rem; font-weight:900;" class="t-cyan">2</div>
+        <div class="neon-card cyan mt-2" style="display:flex; gap:18px; align-items:flex-start;">
+          <div class="icon-badge cyan" style="margin:0; min-width:64px;"><strong>2</strong></div>
           <div>
-            <h3 class="t-cyan" style="margin-bottom:4px;">Connect With Our Team</h3>
-            <p style="margin:0;">Our leadership team will work with you to customize a sponsorship package that creates meaningful impact and visibility for your organization.</p>
-            <ul class="list-clean mt-1" style="font-size:0.9rem;">
-              <li>Facility signage</li>
-              <li>Website recognition</li>
-              <li>Social media engagement</li>
-              <li>Community impact storytelling</li>
-              <li>Event sponsorship visibility</li>
-            </ul>
+            <h3 class="t-cyan" style="margin-bottom:6px;">Connect With Our Team</h3>
+            <p>Our team will customize a sponsorship package with meaningful visibility for your organization.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:8px;">
+              <span class="pill cyan"><i class="fa-solid fa-bullhorn"></i> Facility signage</span>
+              <span class="pill"><i class="fa-solid fa-globe"></i> Website recognition</span>
+              <span class="pill yellow"><i class="fa-brands fa-instagram"></i> Social media</span>
+              <span class="pill cyan"><i class="fa-solid fa-trophy"></i> Event visibility</span>
+            </div>
           </div>
         </div>
 
-        <div class="card" style="display:flex; gap:18px; align-items:flex-start;">
-          <div style="font-size:2rem; font-weight:900;" class="t-yellow">3</div>
+        <div class="neon-card yellow mt-2" style="display:flex; gap:18px; align-items:flex-start;">
+          <div class="icon-badge yellow" style="margin:0; min-width:64px;"><strong>3</strong></div>
           <div>
-            <h3 class="t-yellow" style="margin-bottom:4px;">Help Change Lives</h3>
-            <p style="margin:0;">Your partnership directly supports programs and initiatives that uplift youth and strengthen families.</p>
+            <h3 class="t-yellow" style="margin-bottom:6px;">Help Change Lives</h3>
+            <p style="margin:0;">Your partnership directly supports programs that uplift youth and strengthen families.</p>
           </div>
         </div>
       </div>
 
       <!-- SPONSORSHIP LEVELS -->
-      <div id="levels">
-        <h2>Sponsorship <span class="t-pink">Levels</span></h2>
+      <div class="reveal" id="levels">
+        <span class="badge badge-yellow"><i class="fa-solid fa-ranking-star"></i> Sponsorship Levels</span>
+        <h2 class="mt-2">Choose Your<br><span class="neon-text-yellow">Impact Level</span></h2>
 
-        <div class="neon-card" style="margin-bottom:14px;">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <div><h3 style="color:var(--orange); margin:0;">🥉 Community Sponsor</h3></div>
-            <div class="amount t-yellow" style="font-weight:800;">$5,000+</div>
-          </div>
+        <div class="card mt-2" style="display:flex; justify-content:space-between; align-items:center;">
+          <div><span class="icon-badge orange sm" style="margin:0 12px 0 0;"><i class="fa-solid fa-medal"></i></span> <strong style="color:var(--orange); font-size:1.05rem;">Community Sponsor</strong></div>
+          <span class="t-yellow fw-900 text-xl">$5,000+</span>
         </div>
-        <div class="neon-card cyan" style="margin-bottom:14px;">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <div><h3 style="color:#cd7f32; margin:0;">🥉 Bronze Sponsor</h3></div>
-            <div class="amount t-yellow" style="font-weight:800;">$10,000+</div>
-          </div>
+        <div class="card mt-2" style="display:flex; justify-content:space-between; align-items:center;">
+          <div><span class="icon-badge sm" style="margin:0 12px 0 0; color:#cd7f32; border-color:#cd7f32; box-shadow: 0 0 18px rgba(205,127,50,0.4);"><i class="fa-solid fa-medal"></i></span> <strong style="color:#cd7f32; font-size:1.05rem;">Bronze Sponsor</strong></div>
+          <span class="t-yellow fw-900 text-xl">$10,000+</span>
         </div>
-        <div class="neon-card purple" style="margin-bottom:14px;">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <div><h3 style="color:#c0c0c0; margin:0;">🥈 Silver Sponsor</h3></div>
-            <div class="amount t-yellow" style="font-weight:800;">$25,000+</div>
-          </div>
+        <div class="card mt-2" style="display:flex; justify-content:space-between; align-items:center;">
+          <div><span class="icon-badge sm" style="margin:0 12px 0 0; color:#c0c0c0; border-color:#c0c0c0; box-shadow: 0 0 18px rgba(192,192,192,0.4);"><i class="fa-solid fa-award"></i></span> <strong style="color:#c0c0c0; font-size:1.05rem;">Silver Sponsor</strong></div>
+          <span class="t-yellow fw-900 text-xl">$25,000+</span>
         </div>
-        <div class="neon-card yellow" style="margin-bottom:14px;">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <div><h3 class="t-yellow" style="margin:0;">🥇 Gold Sponsor</h3></div>
-            <div class="amount t-yellow" style="font-weight:800;">$50,000+</div>
-          </div>
+        <div class="card mt-2" style="display:flex; justify-content:space-between; align-items:center; border-color:rgba(255,216,61,0.5); box-shadow: 0 0 22px rgba(255,216,61,0.18);">
+          <div><span class="icon-badge yellow sm" style="margin:0 12px 0 0;"><i class="fa-solid fa-trophy"></i></span> <strong class="t-yellow" style="font-size:1.05rem;">Gold Sponsor</strong></div>
+          <span class="t-yellow fw-900 text-xl">$50,000+</span>
         </div>
-        <div class="neon-card green" style="margin-bottom:14px;">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <div><h3 style="color:var(--green); margin:0;">💎 Platinum Sponsor</h3></div>
-            <div class="amount t-yellow" style="font-weight:800;">$100,000+</div>
-          </div>
+        <div class="card mt-2" style="display:flex; justify-content:space-between; align-items:center; border-color:rgba(77,255,176,0.5); box-shadow: 0 0 22px rgba(77,255,176,0.18);">
+          <div><span class="icon-badge green sm" style="margin:0 12px 0 0;"><i class="fa-solid fa-crown"></i></span> <strong style="color:var(--green); font-size:1.05rem;">Platinum Sponsor</strong></div>
+          <span class="t-yellow fw-900 text-xl">$100,000+</span>
         </div>
 
-        <p class="t-center t-cyan" style="font-weight:700;">All sponsors and donors welcomed and receive recognition!</p>
+        <p class="t-center t-cyan fw-900 mt-3"><i class="fa-solid fa-star"></i> All sponsors &amp; donors welcomed and receive recognition!</p>
+
+        <a class="btn btn-pink mt-2" href="contact.html" style="width:100%; justify-content:center;"><i class="fa-solid fa-handshake"></i> Become a Sponsor Today</a>
       </div>
 
     </div>
@@ -208,20 +208,23 @@
 <!-- OUR ASK -->
 <section class="section" style="background: linear-gradient(90deg, rgba(255,46,166,0.10), rgba(20,225,255,0.10));">
   <div class="container">
-    <div class="grid grid-2" style="gap:36px; align-items:center;">
-      <div>
-        <h2>Our <span class="t-pink">Ask</span></h2>
+    <div class="grid grid-2" style="gap: 40px; align-items: center;">
+      <div class="reveal">
+        <span class="badge badge-pink">Our Ask</span>
+        <h2 class="mt-2">Our <span class="neon-text-pink">Ask</span></h2>
         <p>We are seeking committed partners who believe every child deserves a safe place to belong, every family deserves a place to connect, and every community deserves a space that inspires hope.</p>
-        <p class="t-cyan" style="font-weight:700; font-size:1.15rem;">Together, we can create more than a skating rink. We can build a lasting legacy for Lake County families.</p>
+        <p class="text-lg t-cyan fw-900">Together, we can create more than a skating rink. We can build a lasting legacy for Lake County families.</p>
+        <div class="cta-row mt-2">
+          <a class="btn btn-pink" href="#levels"><i class="fa-solid fa-handshake"></i> Become a Sponsor</a>
+          <a class="btn btn-outline" href="contact.html"><i class="fa-solid fa-calendar"></i> Schedule a Meeting</a>
+          <a class="btn btn-cyan" href="contact.html"><i class="fa-solid fa-download"></i> Download Packet</a>
+        </div>
       </div>
-      <div class="t-center">
-        <img src="assets/images/group-friends.webp" alt="Group of friends skating" style="border-radius:20px; border:2px solid var(--cyan); box-shadow:0 0 30px var(--cyan-glow);">
+      <div class="reveal">
+        <div class="neon-frame yellow">
+          <img src="assets/images/group-friends.webp" alt="Kids skating together">
+        </div>
       </div>
-    </div>
-    <div class="cta-row mt-3" style="justify-content:center;">
-      <a class="btn btn-pink" href="#levels">Become a Sponsor</a>
-      <a class="btn btn-outline" href="contact.html">📅 Schedule a Partnership Meeting</a>
-      <a class="btn btn-cyan" href="contact.html">📥 Download Sponsorship Packet</a>
     </div>
   </div>
 </section>
@@ -231,21 +234,38 @@
     <div class="footer-grid">
       <div class="footer-logo">
         <img src="assets/images/logo.png" alt="Neon Wheels">
-        <p class="mt-2">A safe, vibrant community hub where Lake County youth and families can <span class="t-cyan">Skate</span>, <span class="t-pink">Connect</span>, and <span class="t-yellow">Thrive</span>.</p>
+        <p>A safe, vibrant community hub where Lake County youth and families can <span class="t-cyan">Skate</span>, <span class="t-pink">Connect</span>, and <span class="t-yellow">Thrive</span>.</p>
+        <div class="social-row">
+          <span><i class="fa-brands fa-facebook-f"></i></span><span><i class="fa-brands fa-instagram"></i></span><span><i class="fa-brands fa-tiktok"></i></span><span><i class="fa-brands fa-youtube"></i></span><a href="mailto:info@neonwheelsrollerskating.org"><i class="fa-solid fa-envelope"></i></a>
+        </div>
       </div>
       <div><h4>Quick Links</h4><ul>
-        <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="impact.html">Impact</a></li><li><a href="leadership.html">Leadership</a></li>
+        <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
+        <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i>About Us</a></li>
+        <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i>Programs</a></li>
+        <li><a href="impact.html"><i class="fa-solid fa-chevron-right"></i>Impact</a></li>
+        <li><a href="leadership.html"><i class="fa-solid fa-chevron-right"></i>Leadership</a></li>
       </ul></div>
       <div><h4>Get Involved</h4><ul>
-        <li><a href="donate.html">Donate</a></li><li><a href="partners.html">Partners</a></li><li><a href="business-plan.html">5-Year Plan</a></li><li><a href="contact.html">Contact</a></li><li><a href="thank-you.html">Thank You</a></li>
+        <li><a href="donate.html"><i class="fa-solid fa-heart"></i>Donate</a></li>
+        <li><a href="partners.html"><i class="fa-solid fa-handshake"></i>Partners</a></li>
+        <li><a href="business-plan.html"><i class="fa-solid fa-chart-line"></i>5-Year Plan</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        <li><a href="thank-you.html"><i class="fa-solid fa-star"></i>Thank You</a></li>
       </ul></div>
       <div><h4>Contact</h4><ul>
-        <li>📞 (224) 614-5495</li><li>✉ info@neonwheels.org</li><li>🌐 www.neonwheels.org</li><li>📍 Lake County, Illinois</li>
-      </ul></div>
+        <li><i class="fa-solid fa-phone"></i><a href="tel:+12246145495">+1 (224) 614-5495</a></li>
+        <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@neonwheelsrollerskating.org">info@neonwheelsrollerskating.org</a></li>
+        <li><i class="fa-solid fa-globe"></i><a href="https://www.neonwheelsrollerskating.org">www.neonwheelsrollerskating.org</a></li>
+        <li><i class="fa-solid fa-location-dot"></i><a href="https://maps.google.com/?q=600+N+Berwick+Blvd+Waukegan+IL+60085" target="_blank" rel="noopener">600 N Berwick Blvd<br>Waukegan, IL 60085</a></li>
+      </ul>
+        <div style="margin-top:14px;"><span class="badge badge-cyan"><i class="fa-solid fa-shield-halved"></i> 501(c)(3) Nonprofit</span></div>
+      </div>
     </div>
-    <div class="footer-copy">© 2026 Neon Wheels Roller Skating Rink &amp; Fun Center. All Rights Reserved. • 501(c)(3) Nonprofit • EIN: 93-4851977</div>
+    <div class="footer-copy">© 2026 Neon Wheels Roller Skating Rink &amp; Fun Center. All Rights Reserved. • EIN: 93-4851977 • All donations tax-deductible</div>
   </div>
 </footer>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>

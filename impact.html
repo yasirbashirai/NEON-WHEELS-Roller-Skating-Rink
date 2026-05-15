@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Impact | Neon Wheels Roller Skating Rink & Fun Center</title>
-<meta name="description" content="Our Future Impact With Your Support — youth empowerment, safety, mentorship, and brighter futures for Lake County, Illinois.">
+<title>Our Impact | Neon Wheels Roller Skating Rink & Fun Center</title>
+<meta name="description" content="Our future impact with your support — youth empowerment, safety, mentorship, and brighter futures for Lake County, Illinois.">
 <link rel="icon" type="image/png" href="assets/images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
 <header class="site-header">
   <div class="nav-wrap">
     <a class="logo-link" href="index.html"><img src="assets/images/logo.png" alt="Neon Wheels"></a>
-    <button class="nav-toggle" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <button class="nav-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
     <ul class="nav-menu" id="nav">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
@@ -27,24 +28,27 @@
       <li><a href="business-plan.html">5-Year Plan</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <a href="donate.html" class="btn btn-pink nav-cta">♥ Donate</a>
+    <a href="donate.html" class="btn btn-pink btn-sm"><i class="fa-solid fa-heart"></i> Donate</a>
   </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
   <div class="container">
     <div class="hero-grid">
-      <div>
-        <span class="badge badge-pink mb-2">Our Future Impact</span>
-        <h1>Our Future Impact <span class="t-pink">With Your Support</span></h1>
-        <p>With your support, Neon Wheels will become more than a place to skate — it will become a safe haven, a youth empowerment hub, and a community anchor for youth and families across Lake County, Illinois.</p>
-        <div class="cta-row mt-2">
-          <a class="btn btn-pink" href="donate.html">♥ Donate Now</a>
-          <a class="btn btn-outline" href="partners.html">Become a Partner</a>
+      <div class="reveal">
+        <span class="badge badge-pink mb-2"><i class="fa-solid fa-bolt"></i> Our Future Impact</span>
+        <h1>Our Future Impact<br><span class="neon-text-pink">With Your Support</span></h1>
+        <p class="lead">With your support, Neon Wheels will become more than a place to skate — it will become a <strong class="t-cyan">safe haven</strong>, a <strong class="t-yellow">youth empowerment hub</strong>, and a <strong class="t-pink">community anchor</strong> for youth and families across Lake County, Illinois.</p>
+        <div class="cta-row mt-3">
+          <a class="btn btn-pink" href="donate.html"><i class="fa-solid fa-heart"></i> Donate Now</a>
+          <a class="btn btn-outline" href="partners.html"><i class="fa-solid fa-handshake"></i> Become a Partner</a>
         </div>
       </div>
-      <div>
-        <img src="assets/images/about-kid-2.jpg" alt="Girl roller skating outdoors">
+      <div class="reveal">
+        <div class="neon-frame yellow">
+          <img src="assets/images/about-kid-2.jpg" alt="Girl roller skating outdoors">
+        </div>
       </div>
     </div>
   </div>
@@ -53,73 +57,78 @@
 <!-- PATHWAY TO POSSIBILITY -->
 <section class="section">
   <div class="container">
-    <div class="section-title">
-      <span class="badge badge-cyan">The Future We're Building</span>
-      <h2>More Than A Rink — <span class="t-pink">A Pathway to Possibility</span></h2>
-      <p class="t-soft">Neon Wheels is being created to provide safe recreation, education, mentorship, wellness, and youth development for Lake County.</p>
+    <div class="section-title reveal">
+      <span class="badge badge-cyan"><i class="fa-solid fa-route"></i> The Future We're Building</span>
+      <h2>More Than A Rink —<br><span class="neon-text-pink">A Pathway to Possibility</span></h2>
+      <p>Neon Wheels is being created to provide safe recreation, education, mentorship, wellness, and youth development for Lake County.</p>
     </div>
 
-    <div class="grid grid-4">
-      <div class="card t-center">
-        <div class="icon-circle yellow" style="margin:0 auto 12px;">🛡</div>
+    <div class="grid grid-3">
+      <div class="neon-card yellow reveal t-center">
+        <span class="icon-badge yellow"><i class="fa-solid fa-shield-halved"></i></span>
         <h3 class="t-yellow">Safe Youth Recreation</h3>
-        <p>A fun, inclusive environment where youth can skate, build confidence, and make positive choices.</p>
+        <p>A fun, inclusive environment where youth skate, build confidence, and make positive choices.</p>
       </div>
-      <div class="card t-center">
-        <div class="icon-circle cyan" style="margin:0 auto 12px;">🎓</div>
+      <div class="neon-card cyan reveal t-center">
+        <span class="icon-badge cyan"><i class="fa-solid fa-graduation-cap"></i></span>
         <h3 class="t-cyan">Education &amp; Empowerment</h3>
-        <p>Tutoring, STEM learning, and youth empowerment workshops for ages 5 to 18 and beyond.</p>
+        <p>Tutoring, STEM learning, and youth empowerment workshops for ages 5–18 and beyond.</p>
       </div>
-      <div class="card t-center">
-        <div class="icon-circle" style="margin:0 auto 12px;">👥</div>
+      <div class="neon-card reveal t-center">
+        <span class="icon-badge"><i class="fa-solid fa-people-arrows"></i></span>
         <h3 class="t-pink">Mentorship &amp; Leadership</h3>
         <p>Positive mentorship and leadership pathways for teens and young adults.</p>
       </div>
-      <div class="card t-center">
-        <div class="icon-circle green" style="margin:0 auto 12px;">💗</div>
+      <div class="neon-card green reveal t-center">
+        <span class="icon-badge green"><i class="fa-solid fa-heart-pulse"></i></span>
         <h3 style="color:var(--green);">Health &amp; Wellness</h3>
         <p>Promoting physical activity, family wellness, and lifelong healthy habits.</p>
       </div>
-      <div class="card t-center">
-        <div class="icon-circle purple" style="margin:0 auto 12px;">🎉</div>
+      <div class="neon-card purple reveal t-center">
+        <span class="icon-badge purple"><i class="fa-solid fa-champagne-glasses"></i></span>
         <h3 class="t-purple">Family-Friendly Events</h3>
         <p>Hosting birthday parties, school outings, and community celebrations.</p>
       </div>
-      <div class="card t-center">
-        <div class="icon-circle yellow" style="margin:0 auto 12px;">🌎</div>
-        <h3 class="t-yellow">Community Connection</h3>
-        <p>Building stronger families and lasting community bonds together under one roof.</p>
+      <div class="neon-card orange reveal t-center">
+        <span class="icon-badge orange"><i class="fa-solid fa-earth-americas"></i></span>
+        <h3 style="color:var(--orange);">Community Connection</h3>
+        <p>Building stronger families and lasting community bonds under one roof.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- IMPACT BY NUMBERS -->
-<section class="section" style="background: linear-gradient(180deg, rgba(255,46,166,0.06), rgba(20,225,255,0.06));">
+<section class="section" style="background: linear-gradient(180deg, rgba(255,46,166,0.08), rgba(20,225,255,0.08));">
   <div class="container">
-    <div class="section-title">
-      <h2>Our Impact <span class="t-pink">By the Numbers</span></h2>
+    <div class="section-title reveal">
+      <span class="badge badge-yellow"><i class="fa-solid fa-chart-column"></i> Our Impact</span>
+      <h2>Our Impact <span class="neon-text-pink">By the Numbers</span></h2>
     </div>
     <div class="grid grid-4">
-      <div class="stat-card">
+      <div class="stat-card reveal">
+        <span class="icon-badge sm" style="margin: 0 auto 10px;"><i class="fa-solid fa-children"></i></span>
         <div class="stat-num pink">1,000+</div>
         <div class="stat-label">Youth Served Annually</div>
-        <p class="t-mute" style="font-size:0.85rem;">Through safely structured programs and activities.</p>
+        <p class="t-mute" style="font-size:0.85rem;">Through safely structured programs.</p>
       </div>
-      <div class="stat-card">
+      <div class="stat-card reveal">
+        <span class="icon-badge cyan sm" style="margin: 0 auto 10px;"><i class="fa-solid fa-book"></i></span>
         <div class="stat-num">850+</div>
         <div class="stat-label">Tutoring &amp; STEM Sessions</div>
-        <p class="t-mute" style="font-size:0.85rem;">Provided each year to help students grow.</p>
+        <p class="t-mute" style="font-size:0.85rem;">Provided each year.</p>
       </div>
-      <div class="stat-card">
+      <div class="stat-card reveal">
+        <span class="icon-badge yellow sm" style="margin: 0 auto 10px;"><i class="fa-solid fa-heart-pulse"></i></span>
         <div class="stat-num yellow">1,100+</div>
-        <div class="stat-label">Wellness Program Participants</div>
-        <p class="t-mute" style="font-size:0.85rem;">Active skating, fitness, and mental health activities.</p>
+        <div class="stat-label">Wellness Participants</div>
+        <p class="t-mute" style="font-size:0.85rem;">Active fitness &amp; mental health.</p>
       </div>
-      <div class="stat-card">
-        <div class="stat-num pink">1 Mission</div>
-        <div class="stat-label">Community Partners &amp; Supporters</div>
-        <p class="t-mute" style="font-size:0.85rem;">To inspire, empower, and change lives for generations to come.</p>
+      <div class="stat-card reveal">
+        <span class="icon-badge purple sm" style="margin: 0 auto 10px;"><i class="fa-solid fa-handshake"></i></span>
+        <div class="stat-num purple">1 Mission</div>
+        <div class="stat-label">Endless Community Partners</div>
+        <p class="t-mute" style="font-size:0.85rem;">To inspire, empower &amp; change lives.</p>
       </div>
     </div>
   </div>
@@ -128,56 +137,62 @@
 <!-- BRAYDEN TESTIMONIAL -->
 <section class="section">
   <div class="container">
-    <div class="grid grid-2" style="gap:36px; align-items:center;">
-      <div>
-        <img src="assets/images/dad-daughter.png" alt="Family enjoying time at the rink" style="border-radius:24px; border:2px solid var(--pink); box-shadow:0 0 30px var(--pink-glow);">
-        <p class="t-pink mt-2" style="font-weight:700; font-size:1.1rem;">Brayden, Age 16</p>
+    <div class="grid grid-2" style="gap: 40px; align-items: center;">
+      <div class="reveal">
+        <div class="neon-frame">
+          <img src="assets/images/dad-daughter.png" alt="Family at the rink">
+        </div>
+        <div class="t-center mt-2">
+          <span class="badge badge-pink"><i class="fa-solid fa-quote-left"></i> Brayden, Age 16</span>
+        </div>
       </div>
-      <div>
-        <h2>A facility like <span class="t-pink">Neon Wheels</span> could change my life.</h2>
-        <p>"It would be so much more than a place to skate — it would be safe haven for me and my family."</p>
+      <div class="reveal">
+        <i class="fa-solid fa-quote-left" style="color:var(--pink); font-size:2.5rem; opacity:0.5;"></i>
+        <h2>A facility like <span class="neon-text-pink">Neon Wheels</span><br>could change my life.</h2>
+        <p class="text-lg">"It would be so much more than a place to skate — it would be a safe haven for me and my family."</p>
         <p>With programs like tutoring, mentorship, STEM, financial literacy, life skills, and DJ skate nights, our youth will finally have a space where they can dream, grow, and thrive.</p>
-        <p>Everything I need to grow, learn, and build my future — <span class="t-cyan" style="font-weight:700;">all in one safe place.</span></p>
+        <p class="t-cyan fw-900 text-lg">Everything I need to grow, learn, and build my future — all in one safe place.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- HOW YOUR SUPPORT CREATES IMPACT -->
+<!-- HOW SUPPORT CREATES IMPACT -->
 <section class="section" style="background: linear-gradient(180deg, rgba(161,107,255,0.06), transparent);">
   <div class="container">
-    <div class="section-title">
-      <h2>How Your <span class="t-pink">Support</span> Creates <span class="t-cyan">Impact</span></h2>
+    <div class="section-title reveal">
+      <span class="badge badge-pink"><i class="fa-solid fa-hand-holding-heart"></i> The Ripple Effect</span>
+      <h2>How Your <span class="neon-text-pink">Support</span> Creates <span class="neon-text-cyan">Impact</span></h2>
     </div>
-    <div class="grid grid-4">
-      <div class="card">
-        <div class="icon-circle">🏗</div>
+    <div class="grid grid-3">
+      <div class="card reveal">
+        <span class="icon-badge"><i class="fa-solid fa-building"></i></span>
         <h3 class="t-pink">Facility Development</h3>
         <p>Building a state-of-the-art skating rink &amp; fun center that becomes a community staple.</p>
       </div>
-      <div class="card">
-        <div class="icon-circle cyan">🎓</div>
+      <div class="card reveal">
+        <span class="icon-badge cyan"><i class="fa-solid fa-rocket"></i></span>
         <h3 class="t-cyan">Youth Programs</h3>
-        <p>Creating life-changing youth programs that help them learn, lead, and excel.</p>
+        <p>Life-changing youth programs that help them learn, lead, and excel.</p>
       </div>
-      <div class="card">
-        <div class="icon-circle yellow">💡</div>
+      <div class="card reveal">
+        <span class="icon-badge yellow"><i class="fa-solid fa-lightbulb"></i></span>
         <h3 class="t-yellow">STEM &amp; Education</h3>
-        <p>Providing tutoring, technology, and learning resources that prepare youth for the future.</p>
+        <p>Tutoring, technology, and learning resources that prepare youth for the future.</p>
       </div>
-      <div class="card">
-        <div class="icon-circle green">🤝</div>
+      <div class="card reveal">
+        <span class="icon-badge green"><i class="fa-solid fa-helmet-safety"></i></span>
         <h3 style="color:var(--green);">Equipment &amp; Safety</h3>
-        <p>Providing safety gear, equipment, and tools that keep skaters protected.</p>
+        <p>Safety gear, equipment, and tools that keep skaters protected.</p>
       </div>
-      <div class="card">
-        <div class="icon-circle purple">📣</div>
+      <div class="card reveal">
+        <span class="icon-badge purple"><i class="fa-solid fa-bullhorn"></i></span>
         <h3 class="t-purple">Outreach &amp; Events</h3>
-        <p>Hosting community events that bring people together and build lasting memories.</p>
+        <p>Community events that bring people together and build lasting memories.</p>
       </div>
-      <div class="card">
-        <div class="icon-circle">🎟</div>
-        <h3 class="t-pink">Scholarships &amp; Access</h3>
+      <div class="card reveal">
+        <span class="icon-badge orange"><i class="fa-solid fa-ticket"></i></span>
+        <h3 style="color:var(--orange);">Scholarships &amp; Access</h3>
         <p>Ensuring every family can experience Neon Wheels regardless of income.</p>
       </div>
     </div>
@@ -186,13 +201,13 @@
 
 <!-- BOTTOM CTA -->
 <section class="section-sm" style="background: linear-gradient(90deg, rgba(255,46,166,0.12), rgba(20,225,255,0.12));">
-  <div class="container t-center">
-    <h2>Be Part of the <span class="t-pink">Impact</span></h2>
-    <p>Together, we can create more than a rink — we can create lasting change for thousands of youth and families.</p>
+  <div class="container t-center reveal">
+    <h2>Be Part of the <span class="neon-text-pink">Impact</span></h2>
+    <p class="text-lg">Together, we can create more than a rink — we can create lasting change for thousands of youth and families.</p>
     <div class="cta-row" style="justify-content:center;">
-      <a class="btn btn-pink" href="donate.html">♥ Donate Now</a>
-      <a class="btn btn-outline" href="partners.html">Become a Sponsor</a>
-      <a class="btn btn-cyan" href="contact.html">Volunteer With Us</a>
+      <a class="btn btn-pink" href="donate.html"><i class="fa-solid fa-heart"></i> Donate Now</a>
+      <a class="btn btn-outline" href="partners.html"><i class="fa-solid fa-handshake"></i> Become a Sponsor</a>
+      <a class="btn btn-cyan" href="contact.html"><i class="fa-solid fa-hands-holding-child"></i> Volunteer With Us</a>
     </div>
   </div>
 </section>
@@ -202,21 +217,38 @@
     <div class="footer-grid">
       <div class="footer-logo">
         <img src="assets/images/logo.png" alt="Neon Wheels">
-        <p class="mt-2">A safe, vibrant community hub where Lake County youth and families can <span class="t-cyan">Skate</span>, <span class="t-pink">Connect</span>, and <span class="t-yellow">Thrive</span>.</p>
+        <p>A safe, vibrant community hub where Lake County youth and families can <span class="t-cyan">Skate</span>, <span class="t-pink">Connect</span>, and <span class="t-yellow">Thrive</span>.</p>
+        <div class="social-row">
+          <span><i class="fa-brands fa-facebook-f"></i></span><span><i class="fa-brands fa-instagram"></i></span><span><i class="fa-brands fa-tiktok"></i></span><span><i class="fa-brands fa-youtube"></i></span><a href="mailto:info@neonwheelsrollerskating.org"><i class="fa-solid fa-envelope"></i></a>
+        </div>
       </div>
       <div><h4>Quick Links</h4><ul>
-        <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="impact.html">Impact</a></li><li><a href="leadership.html">Leadership</a></li>
+        <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
+        <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i>About Us</a></li>
+        <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i>Programs</a></li>
+        <li><a href="impact.html"><i class="fa-solid fa-chevron-right"></i>Impact</a></li>
+        <li><a href="leadership.html"><i class="fa-solid fa-chevron-right"></i>Leadership</a></li>
       </ul></div>
       <div><h4>Get Involved</h4><ul>
-        <li><a href="donate.html">Donate</a></li><li><a href="partners.html">Partners</a></li><li><a href="business-plan.html">5-Year Plan</a></li><li><a href="contact.html">Contact</a></li><li><a href="thank-you.html">Thank You</a></li>
+        <li><a href="donate.html"><i class="fa-solid fa-heart"></i>Donate</a></li>
+        <li><a href="partners.html"><i class="fa-solid fa-handshake"></i>Partners</a></li>
+        <li><a href="business-plan.html"><i class="fa-solid fa-chart-line"></i>5-Year Plan</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        <li><a href="thank-you.html"><i class="fa-solid fa-star"></i>Thank You</a></li>
       </ul></div>
       <div><h4>Contact</h4><ul>
-        <li>📞 (224) 614-5495</li><li>✉ info@neonwheels.org</li><li>🌐 www.neonwheels.org</li><li>📍 Lake County, Illinois</li>
-      </ul></div>
+        <li><i class="fa-solid fa-phone"></i><a href="tel:+12246145495">+1 (224) 614-5495</a></li>
+        <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@neonwheelsrollerskating.org">info@neonwheelsrollerskating.org</a></li>
+        <li><i class="fa-solid fa-globe"></i><a href="https://www.neonwheelsrollerskating.org">www.neonwheelsrollerskating.org</a></li>
+        <li><i class="fa-solid fa-location-dot"></i><a href="https://maps.google.com/?q=600+N+Berwick+Blvd+Waukegan+IL+60085" target="_blank" rel="noopener">600 N Berwick Blvd<br>Waukegan, IL 60085</a></li>
+      </ul>
+        <div style="margin-top:14px;"><span class="badge badge-cyan"><i class="fa-solid fa-shield-halved"></i> 501(c)(3) Nonprofit</span></div>
+      </div>
     </div>
-    <div class="footer-copy">© 2026 Neon Wheels Roller Skating Rink &amp; Fun Center. All Rights Reserved. • 501(c)(3) Nonprofit • EIN: 93-4851977</div>
+    <div class="footer-copy">© 2026 Neon Wheels Roller Skating Rink &amp; Fun Center. All Rights Reserved. • EIN: 93-4851977 • All donations tax-deductible</div>
   </div>
 </footer>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>
