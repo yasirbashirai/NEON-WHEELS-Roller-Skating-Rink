@@ -58,24 +58,35 @@
         </div>
       </div>
 
-      <!-- LAND HERO with yellow trapezoid -->
+      <!-- LAND HERO — auto-rotating slideshow (land + building rendering) -->
       <div class="reveal">
         <div class="land-hero">
-          <img src="assets/images/land.png" alt="Future site of Neon Wheels — aerial view of Lake County land">
-          <svg viewBox="0 0 400 300" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <filter id="trapezoidGlow" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur stdDeviation="3" result="b1"/>
-                <feGaussianBlur stdDeviation="6" result="b2"/>
-                <feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
-              </filter>
-            </defs>
-            <polygon points="60,250 340,250 290,100 110,100"
-              fill="rgba(255,216,61,0.10)"
-              stroke="#ffd83d" stroke-width="4" stroke-linejoin="round"
-              filter="url(#trapezoidGlow)" />
-          </svg>
-          <div class="label"><i class="fa-solid fa-location-dot"></i>&nbsp; Future Home Site</div>
+
+          <!-- Slide 1: Land aerial with yellow trapezoid -->
+          <div class="hero-slide">
+            <img src="assets/images/land.png" alt="Future site of Neon Wheels — aerial view of Lake County land">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <filter id="trapezoidGlow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="3" result="b1"/>
+                  <feGaussianBlur stdDeviation="6" result="b2"/>
+                  <feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+              <polygon points="60,250 340,250 290,100 110,100"
+                fill="rgba(255,216,61,0.10)"
+                stroke="#ffd83d" stroke-width="4" stroke-linejoin="round"
+                filter="url(#trapezoidGlow)" />
+            </svg>
+            <div class="label"><i class="fa-solid fa-location-dot"></i>&nbsp; Future Home Site</div>
+          </div>
+
+          <!-- Slide 2: Building rendering -->
+          <div class="hero-slide">
+            <img src="assets/images/building-rendering.png" alt="Neon Wheels Roller Skating Rink building — architectural rendering at night">
+            <div class="label cyan-label"><i class="fa-solid fa-building"></i>&nbsp; Coming Soon</div>
+          </div>
+
         </div>
       </div>
     </div>
