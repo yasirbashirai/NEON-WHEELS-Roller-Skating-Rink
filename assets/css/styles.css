@@ -393,6 +393,80 @@ p  { margin: 0 0 1em; color: var(--text-soft); }
   box-shadow: 0 0 14px rgba(255,46,166,0.5), 0 0 22px rgba(20,225,255,0.4);
 }
 
+/* =========== HERO BACKGROUND IMAGE (Home) =========== */
+.hero.hero-bg {
+  position: relative;
+  min-height: 720px;
+  padding: 90px 0 110px;
+  background:
+    linear-gradient(90deg, rgba(7,2,15,0.92) 0%, rgba(7,2,15,0.75) 45%, rgba(7,2,15,0.35) 100%),
+    url('../images/doc/home-hero.png') center/cover no-repeat;
+  overflow: hidden;
+}
+.hero.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 500px at 0% 50%, rgba(255,46,166,0.18), transparent 60%),
+    radial-gradient(800px 500px at 100% 100%, rgba(20,225,255,0.18), transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+.hero.hero-bg::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -1px;
+  height: 120px;
+  background: linear-gradient(180deg, transparent, var(--bg) 90%);
+  pointer-events: none;
+  z-index: 1;
+}
+.hero.hero-bg .container { position: relative; z-index: 2; }
+.hero.hero-bg .hero-content {
+  max-width: 720px;
+  text-align: left;
+}
+.hero.hero-bg h1 {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  margin-bottom: 6px;
+  text-shadow: 0 4px 24px rgba(0,0,0,0.7);
+}
+.hero-subhead {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 600;
+  color: var(--text-soft);
+  margin: 0 0 4px;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.7);
+}
+.hero.hero-bg .lead {
+  text-shadow: 0 2px 16px rgba(0,0,0,0.7);
+  max-width: 640px;
+}
+
+@media (max-width: 900px) {
+  .hero.hero-bg {
+    min-height: auto;
+    padding: 60px 0 80px;
+    background:
+      linear-gradient(180deg, rgba(7,2,15,0.55) 0%, rgba(7,2,15,0.92) 100%),
+      url('../images/doc/home-hero.png') center 25%/cover no-repeat;
+  }
+  .hero.hero-bg .hero-content {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .hero.hero-bg .neon-divider.hero-divider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero.hero-bg { padding: 44px 0 64px; }
+}
+
 .btn-sm { padding: 10px 20px; font-size: 0.78rem; }
 
 /* -------- BADGES -------- */
