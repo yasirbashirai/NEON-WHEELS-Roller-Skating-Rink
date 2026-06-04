@@ -60,7 +60,7 @@
             <div class="info-value">1-847-505-2273</div>
           </div>
         </a>
-        <a href="mailto:info@neonwheelsrollerskating.org" class="info-card">
+        <a href="mailto:info@neonwheelsrollerskating.org" class="info-card" onclick="return nwOpenMail('info@neonwheelsrollerskating.org','Neon Wheels — Inquiry');">
           <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
           <div>
             <div class="info-label">Email Us</div>
@@ -112,18 +112,33 @@
       <button type="submit" class="btn btn-pink" style="width:100%; justify-content:center;"><i class="fa-solid fa-paper-plane"></i> Submit Inquiry</button>
     </form>
     <script>
+      // Open a ready-to-write email. Prefers Gmail's web compose (works without a
+      // configured desktop mail app); falls back to the device default mail client.
+      function nwOpenMail(addr, subject, body){
+        var su = subject || '', bd = body || '';
+        var gmail = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(addr)
+          + (su ? '&su=' + encodeURIComponent(su) : '')
+          + (bd ? '&body=' + encodeURIComponent(bd) : '');
+        var w = window.open(gmail, '_blank', 'noopener');
+        if(!w){
+          var q = [];
+          if(su) q.push('subject=' + encodeURIComponent(su));
+          if(bd) q.push('body=' + encodeURIComponent(bd));
+          window.location.href = 'mailto:' + addr + (q.length ? '?' + q.join('&') : '');
+        }
+        return false;
+      }
       document.getElementById('contact-form').addEventListener('submit', function(e){
         e.preventDefault();
         var f = e.target;
-        var subject = encodeURIComponent('[Neon Wheels] ' + (f.interest.value || 'Inquiry') + ' from ' + f.name.value);
-        var body = encodeURIComponent(
+        var subject = '[Neon Wheels] ' + (f.interest.value || 'Inquiry') + ' from ' + f.name.value;
+        var body =
           'Name: ' + f.name.value + '\n' +
           'Email: ' + f.email.value + '\n' +
           'Phone: ' + (f.phone.value || 'n/a') + '\n' +
           'Interest: ' + f.interest.value + '\n\n' +
-          'Message:\n' + f.message.value
-        );
-        window.location.href = 'mailto:info@neonwheelsrollerskating.org?subject=' + subject + '&body=' + body;
+          'Message:\n' + f.message.value;
+        nwOpenMail('info@neonwheelsrollerskating.org', subject, body);
       });
     </script>
   </div>
@@ -145,7 +160,7 @@
         <img src="assets/images/logo.png" alt="Neon Wheels">
         <p>A safe, vibrant community hub where Lake County youth and families can <span class="t-cyan">Skate</span>, <span class="t-pink">Connect</span>, and <span class="t-yellow">Thrive</span>.</p>
         <div class="social-row">
-          <span><i class="fa-brands fa-facebook-f"></i></span><span><i class="fa-brands fa-instagram"></i></span><span><i class="fa-brands fa-tiktok"></i></span><span><i class="fa-brands fa-youtube"></i></span><a href="mailto:info@neonwheelsrollerskating.org"><i class="fa-solid fa-envelope"></i></a>
+          <span><i class="fa-brands fa-facebook-f"></i></span><span><i class="fa-brands fa-instagram"></i></span><span><i class="fa-brands fa-tiktok"></i></span><span><i class="fa-brands fa-youtube"></i></span><a href="mailto:info@neonwheelsrollerskating.org" onclick="return nwOpenMail('info@neonwheelsrollerskating.org','Neon Wheels — Inquiry');"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
             <div>
@@ -172,7 +187,7 @@
         <h4>Contact</h4>
         <ul>
           <li><i class="fa-solid fa-phone"></i><a href="tel:+18475052273">1-847-505-2273</a></li>
-          <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@neonwheelsrollerskating.org">info@neonwheelsrollerskating.org</a></li>
+          <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@neonwheelsrollerskating.org" onclick="return nwOpenMail('info@neonwheelsrollerskating.org','Neon Wheels — Inquiry');">info@neonwheelsrollerskating.org</a></li>
           <li><i class="fa-solid fa-globe"></i><a href="https://www.neonwheelsrollerskating.org">www.neonwheelsrollerskating.org</a></li>
           <li><i class="fa-solid fa-location-dot"></i>Lake County, Illinois</li>
         </ul>

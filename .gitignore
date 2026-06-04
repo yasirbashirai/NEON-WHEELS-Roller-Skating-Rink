@@ -24,3 +24,8 @@ build/
 .env
 .env.local
 .vercel
+
+# Local image backups (not for deploy)
+_pre-*-backup/
+*.bak
+*.bak-*
