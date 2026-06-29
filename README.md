@@ -83,7 +83,7 @@ python3 -m http.server 8000
 
 **Neon Wheels Roller Skating Rink & Fun Center**
 - 📞 (224) 614-5495
-- ✉ info@neonwheels.org
-- 🌐 www.neonwheels.org
+- ✉ info@neonwheelsrollerskating.org
+- 🌐 https://neonwheelsrollerskating.org
 - 📍 Gurnee, IL — Lake County, Illinois
 - 501(c)(3) Nonprofit • All donations tax-deductible

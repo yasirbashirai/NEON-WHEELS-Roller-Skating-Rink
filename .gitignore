@@ -27,5 +27,6 @@ build/
 
 # Local image backups (not for deploy)
 _pre-*-backup/
+_pre*backup/
 *.bak
 *.bak-*
